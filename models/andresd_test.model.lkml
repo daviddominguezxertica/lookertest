@@ -36,6 +36,9 @@ explore: jsontest {}
 explore: otros_datos {}
 
 explore: jsoncompuesto {
+  always_filter: {
+    filters: [jsoncompuesto.user_id: "01d87940-33c5-e412-97dc-4325f3eb1c4e"]
+  }
   join: jsoncompuesto__items {
     view_label: "Jsoncompuesto: Items"
     sql: LEFT JOIN UNNEST(${jsoncompuesto.items}) as jsoncompuesto__items ;;
