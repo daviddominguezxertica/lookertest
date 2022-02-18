@@ -37,6 +37,7 @@ explore: otros_datos {}
 
 explore: jsoncompuesto {
   join: jsoncompuesto__items {
+
     view_label: "Jsoncompuesto: Items"
     sql: LEFT JOIN UNNEST(${jsoncompuesto.items}) as jsoncompuesto__items ;;
     relationship: one_to_many
