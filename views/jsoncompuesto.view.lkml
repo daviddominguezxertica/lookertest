@@ -164,7 +164,7 @@ view: jsoncompuesto {
   }
 
   dimension: platform {
-    type: string
+    type: number
     sql: ${TABLE}.platform ;;
   }
 
